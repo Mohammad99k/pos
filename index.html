@@ -20,7 +20,6 @@
 
   </head>
   <body class="bg-light p-3">
-    <!-- اسپینر بارگذاری به صورت مودال -->
     <div
       class="modal fade"
       id="spinnerModal"
@@ -50,8 +49,6 @@
         </div>
       </div>
     </div>
-
-    <!-- مودال نمایش جزئیات -->
     <div
       class="modal fade"
       id="detailModal"
@@ -73,7 +70,6 @@
             ></button>
           </div>
           <div class="modal-body modal-body-scroll" id="detailModalBody">
-            <!-- محتوای داینامیک در اینجا قرار می‌گیرد -->
           </div>
           <div class="modal-footer">
             <button
@@ -87,8 +83,6 @@
         </div>
       </div>
     </div>
-
-    <!-- مودال نمایش نمودار -->
     <div
       class="modal fade"
       id="chartModal"
@@ -110,7 +104,6 @@
             ></button>
           </div>
           <div class="modal-body" id="chartModalBody">
-            <!-- کانتینر نمودار -->
             <div
               id="chartContainer"
               class="chart-container"
@@ -122,7 +115,6 @@
 
               <canvas id="growthChart"></canvas>
             </div>
-            <!-- پیام بدون داده (پنهان) -->
             <div
               id="noDataMessage"
               class="no-data-message"
@@ -147,8 +139,6 @@
         </div>
       </div>
     </div>
-
-    <!-- ===== مودال تخصیص کارمندان ===== -->
     <div
       class="modal fade"
       id="assignModal"
@@ -169,7 +159,6 @@
           </div>
           <div class="modal-body" id="assignModalBody">
             <div class="row g-3">
-              <!-- لیست کارمندان -->
               <div class="col-12">
                 <div class="card">
                   <div class="card-header bg-success text-white">
@@ -188,8 +177,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- فایل تخصیص ماه قبل (اختیاری) -->
               <div class="col-12">
                 <div class="card">
                   <div class="card-header bg-primary text-white">
@@ -255,8 +242,6 @@
         </div>
       </div>
     </div>
-
-    <!-- ===== مودال ذخیره وضعیت ===== -->
     <div
       class="modal fade"
       id="saveStateModal"
@@ -315,7 +300,6 @@
         </div>
       </div>
     </div>
-    <!-- ===== مودال آمار کلی ===== -->
     <div
       class="modal fade"
       id="statisticsModal"
@@ -431,7 +415,6 @@
         <button class="btn btn-warning" id="exportAssignBtn" disabled>
           📥 خروجی تخصیص
         </button>
-        <!-- State Management -->
         <button class="btn btn-success" id="saveStateBtn">
           💾 ذخیره داده‌ها
         </button>
@@ -539,7 +522,6 @@
           <div
             class="d-flex flex-wrap align-items-center justify-content-between ap-2"
           >
-            <!-- فیلتر شعبه -->
             <div
               id="branchFilterContainer"
               style="display: none"
@@ -554,7 +536,6 @@
                 <option value="all">همه</option>
               </select>
             </div>
-            <!-- فیلتر کارمند -->
             <div
               id="employeeFilterContainer"
               class="d-flex align-items-center gap-2 d-none"
@@ -568,7 +549,6 @@
                 <option value="all">همه</option>
               </select>
             </div>
-            <!-- فیلتر شماره مشتری -->
             <div class="d-flex align-items-center gap-2">
               <span class="fw-bold me-1">جستجوی مشتری:</span>
               <input
